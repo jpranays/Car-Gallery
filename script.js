@@ -1,9 +1,9 @@
 window.addEventListener("load", () => {
 	document.querySelector(".loader").style.display = "none";
-	document.querySelector(".container").style.animationDelay = "5s";
+	document.querySelector(".container").style.animationDelay = "4s";
 	let counter = setTimeout(() => {
 		counter = setInterval(anim, 100);
-	}, 5000);
+	}, 1000);
 	inc = 0;
 	function anim() {
 		let image = document.querySelectorAll("img")[inc];
