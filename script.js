@@ -1,4 +1,5 @@
-window.addEventListener("load", (e) => {
+window.addEventListener("load", () => {
+	document.querySelector(".container").style.animationDelay = "5s";
 	document.querySelector(".loader").style.display = "none";
 	let counter = setTimeout(() => {
 		counter = setInterval(anim, 100);
