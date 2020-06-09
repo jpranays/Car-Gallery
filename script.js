@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
-	document.querySelector(".container").style.animationDelay = "5s";
 	document.querySelector(".loader").style.display = "none";
+	document.querySelector(".container").style.animationDelay = "5s";
 	let counter = setTimeout(() => {
 		counter = setInterval(anim, 100);
 	}, 5000);
