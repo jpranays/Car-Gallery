@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 	document.querySelector(".container").style.animationDelay = "4s";
 	let counter = setTimeout(() => {
 		counter = setInterval(anim, 100);
-	}, 1000);
+	}, 500);
 	inc = 0;
 	function anim() {
 		let image = document.querySelectorAll("img")[inc];
