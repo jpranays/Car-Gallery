@@ -14,9 +14,11 @@ window.addEventListener("load", () => {
 	// 			clearInterval(counter);
 	// 		}
 	// 	}
+
 	setInterval(function () {
 		$("#mycar").shake();
 	}, 3000);
+
 	let i = 0;
 	$.shake({
 		callback: function () {
@@ -24,11 +26,13 @@ window.addEventListener("load", () => {
 			navigator.vibrate(200);
 			if ($(container).css("animation-play-state") == "paused") {
 				$(container).css("animation-play-state", "running");
-								alert("hurray");
-
+				setTimeout(() => {
+					$(container).css("animation-play-state", "paused");
+				}, 6000);
 			}
-			if (i == 10) {
+			if (i == 5) {
 				alert("gotcha");
+				i = 0;
 			}
 		},
 	});
