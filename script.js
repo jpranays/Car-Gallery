@@ -24,15 +24,29 @@ window.addEventListener("load", () => {
 		callback: function () {
 			i++;
 			navigator.vibrate(200);
-			if ($(container).css("animation-play-state") == "paused") {
-				$(container).css("animation-play-state", "running");
-				setTimeout(() => {
-					$(container).css("animation-play-state", "paused");
-				}, 6000);
+			if ($(container).css("animation")) {
+				if ($(container).css("animation-play-state") == "paused") {
+					$(container).css("animation-play-state", "running");
+					setTimeout(() => {
+						$(container).css("animation-play-state", "paused");
+					}, 6000);
+				}
 			}
 			if (i == 5) {
 				alert("gotcha");
-				i = 0;
+				$(container).css("animation", "none");
+				$(".container > img").css("animation-play-state", "running");
+				counter = setInterval(anim, 100);
+				inc = 0;
+
+				function anim() {
+					let image = document.querySelectorAll("img")[inc];
+					inc++;
+					image.style.transform = "rotate(360deg)";
+					if (inc == 13) {
+						clearInterval(counter);
+					}
+				}
 			}
 		},
 	});
