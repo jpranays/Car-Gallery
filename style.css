@@ -28,7 +28,8 @@ body {
 	grid-template-rows: repeat(4, 1fr);
 	align-items: center;
 	height: 100vh;
-/* 	animation: jump 0.1s linear 50; */
+	animation: jump 0.1s linear 50;
+	animation-play-state: paused;
 }
 @keyframes jump {
 	to {
@@ -50,13 +51,15 @@ body {
 }
 .container > img:nth-child(even) {
 	transform: rotate(6deg);
-/* 	animation: rotate 2s linear alternate infinite; */
+	animation: rotate 2s linear alternate infinite;
+	animation-play-state: paused;
 }
 
 .container > img:nth-child(odd) {
 	transform: rotate(-6deg);
-/* 	animation: rotate 2s linear alternate infinite 0.5s; */
+	animation: rotate 2s linear alternate infinite 0.5s;
 	animation-delay: 0.5s;
+	animation-play-state: paused;
 }
 #mycar {
 	animation: none;
