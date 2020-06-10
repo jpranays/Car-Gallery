@@ -1,19 +1,6 @@
 window.addEventListener("load", () => {
 	document.querySelector(".loader").style.display = "none";
 	let container = document.querySelector(".container");
-	// 	document.querySelector(".container").style.animationDelay = "4s";
-	// 	let counter = setTimeout(() => {
-	// 		counter = setInterval(anim, 100);
-	// 	}, 500);
-	// 	inc = 0;
-	// 	function anim() {
-	// 		let image = document.querySelectorAll("img")[inc];
-	// 		inc++;
-	// 		image.style.transform = "rotate(360deg)";
-	// 		if (inc == 13) {
-	// 			clearInterval(counter);
-	// 		}
-	// 	}
 
 	setInterval(function () {
 		$("#mycar").shake();
@@ -33,7 +20,7 @@ window.addEventListener("load", () => {
 				}
 			}
 			if (i == 5) {
-				alert("gotcha");
+				alert("Spread");
 				$(container).css("animation", "none");
 				$(".container > img").css("animation-play-state", "running");
 				counter = setInterval(anim, 100);
