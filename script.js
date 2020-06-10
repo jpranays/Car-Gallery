@@ -24,6 +24,8 @@ window.addEventListener("load", () => {
 			navigator.vibrate(200);
 			if ($(container).css("animation-play-state") == "paused") {
 				$(container).css("animation-play-state", "running");
+								alert("hurray");
+
 			}
 			if (i == 10) {
 				alert("gotcha");
