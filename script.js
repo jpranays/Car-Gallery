@@ -1,5 +1,5 @@
-// window.addEventListener("load", () => {
-// 	document.querySelector(".loader").style.display = "none";
+window.addEventListener("load", () => {
+	document.querySelector(".loader").style.display = "none";
 // 	document.querySelector(".container").style.animationDelay = "4s";
 // 	let counter = setTimeout(() => {
 // 		counter = setInterval(anim, 100);
@@ -13,8 +13,6 @@
 // 			clearInterval(counter);
 // 		}
 // 	}
-// });
-$(document).ready(function () {
 	setInterval(function () {
 		$("#mycar").shake();
 	}, 3000);
