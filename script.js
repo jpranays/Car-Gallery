@@ -16,10 +16,10 @@ window.addEventListener("load", () => {
 					$(container).css("animation-play-state", "running");
 					setTimeout(() => {
 						$(container).css("animation-play-state", "paused");
-					}, 6000);
+					}, 3000);
 				}
 			}
-			if (i == 5) {
+			if (i == 3) {
 				alert("Spread");
 				$(container).css("animation", "none");
 				$(".container > img").css("animation-play-state", "running");
